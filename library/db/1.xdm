@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><schema databaseDialect="H2">
+<tables>
+<table description="" name="AUTHOR">
+<columns>
+<column description="" isPk="true" javaType="java.math.BigDecimal" name="AUTHOR_ID" nullable="false" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.lang.String" name="NAMEAUTHOR" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="LASTNAMEAUTHOR" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="PATRONYMICAUTHOR" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="BOOK" nullable="true" precision="10" scale="0" signed="true" size="100" type="3" typeName="DECIMAL"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_7" unique="true">
+<indColumn ascending="true" name="AUTHOR_ID" position="1"/>
+</index>
+<index clustered="false" fKeyName="FK_138380154015038" hashed="false" isPKey="false" name="FK_138380154015038_INDEX_7" unique="false">
+<indColumn ascending="true" name="BOOK" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_7">
+<pkColumn pkField="AUTHOR_ID" pkName="PRIMARY_KEY_7" pkSchema="PUBLIC" pkTable="AUTHOR"/>
+</primaryKey>
+<foreignKeys>
+<foreignKey name="FK_138380154015038">
+<fkColumn fkDeferrable="false" fkDeleteRule="CASCADE" fkField="BOOK" fkName="FK_138380154015038" fkSchema="PUBLIC" fkTable="AUTHOR" fkUpdateRule="CASCADE" pkField="ISBN" pkName="PRIMARY_KEY_7D" pkSchema="PUBLIC" pkTable="BOOK"/>
+</foreignKey>
+</foreignKeys>
+</table>
+<table description="" name="MTD_USERS">
+<columns>
+<column description="" isPk="true" javaType="java.lang.String" name="USR_NAME" nullable="false" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="USR_PASSWD" nullable="true" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="USR_FORM" nullable="true" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="USR_CONTEXT" nullable="true" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="USR_ROLES" nullable="true" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="USR_PHONE" nullable="true" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="USR_EMAIL" nullable="true" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_6" unique="true">
+<indColumn ascending="true" name="USR_NAME" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_6">
+<pkColumn pkField="USR_NAME" pkName="PRIMARY_KEY_6" pkSchema="PUBLIC" pkTable="MTD_USERS"/>
+</primaryKey>
+</table>
+<table description="" name="READER">
+<columns>
+<column description="" isPk="true" javaType="java.math.BigDecimal" name="READERCODE" nullable="false" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.lang.String" name="LASTNAME" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="NAME" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.util.Date" name="DATEOFBIRTH" nullable="true" precision="10" scale="0" signed="true" size="8" type="91" typeName="DATE"/>
+<column description="" isPk="false" javaType="java.lang.String" name="STUDYORWORKPLACE" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="PHONENUMBER" nullable="true" precision="10" scale="32767" signed="true" size="65535" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.lang.String" name="ADDRESS" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_9" unique="true">
+<indColumn ascending="true" name="READERCODE" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_9">
+<pkColumn pkField="READERCODE" pkName="PRIMARY_KEY_9" pkSchema="PUBLIC" pkTable="READER"/>
+</primaryKey>
+</table>
+<table description="" name="MTD_GROUPS">
+<columns>
+<column description="" isPk="false" javaType="java.lang.String" name="USR_NAME" nullable="false" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="GROUP_NAME" nullable="false" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="MTD_GROUPS_USERS_FK" hashed="false" isPKey="false" name="MTD_GROUPS_USERS_FK_INDEX_D" unique="false">
+<indColumn ascending="true" name="USR_NAME" position="1"/>
+</index>
+</indexes>
+<foreignKeys>
+<foreignKey name="MTD_GROUPS_USERS_FK">
+<fkColumn fkDeferrable="false" fkDeleteRule="CASCADE" fkField="USR_NAME" fkName="MTD_GROUPS_USERS_FK" fkSchema="PUBLIC" fkTable="MTD_GROUPS" fkUpdateRule="CASCADE" pkField="USR_NAME" pkName="PRIMARY_KEY_6" pkSchema="PUBLIC" pkTable="MTD_USERS"/>
+</foreignKey>
+</foreignKeys>
+</table>
+<table description="" name="PUBLISHINGHOUSE">
+<columns>
+<column description="" isPk="true" javaType="java.math.BigDecimal" name="PUBLISHINGHOUSE_ID" nullable="false" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="DATEOFPUBLISHING" nullable="true" precision="10" scale="32767" signed="true" size="65535" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="NUMBEROFPAGES" nullable="true" precision="10" scale="32767" signed="true" size="65535" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.lang.String" name="ADDRESS" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_3" unique="true">
+<indColumn ascending="true" name="PUBLISHINGHOUSE_ID" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_3">
+<pkColumn pkField="PUBLISHINGHOUSE_ID" pkName="PRIMARY_KEY_3" pkSchema="PUBLIC" pkTable="PUBLISHINGHOUSE"/>
+</primaryKey>
+</table>
+<table description="" name="MTD_ENTITIES">
+<columns>
+<column description="" isPk="true" javaType="java.lang.String" name="MDENT_ID" nullable="false" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.String" name="MDENT_NAME" nullable="true" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="MDENT_TYPE" nullable="false" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="com.bearsoft.rowset.compacts.CompactClob" name="MDENT_CONTENT_TXT" nullable="true" precision="10" scale="0" signed="true" size="2147483647" type="2005" typeName="CLOB"/>
+<column description="" isPk="false" javaType="java.lang.String" name="MDENT_PARENT_ID" nullable="true" precision="10" scale="0" signed="true" size="200" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.lang.Double" name="MDENT_ORDER" nullable="true" precision="10" scale="0" signed="true" size="17" type="8" typeName="DOUBLE"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="MDENT_CONTENT_TXT_SIZE" nullable="true" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="MDENT_CONTENT_TXT_CRC32" nullable="true" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="" hashed="false" isPKey="false" name="MTD_NAMES_UNIQUE_INDEX_C" unique="true">
+<indColumn ascending="true" name="MDENT_PARENT_ID" position="1"/>
+<indColumn ascending="true" name="MDENT_NAME" position="2"/>
+</index>
+<index clustered="false" fKeyName="MTD_ENTITIES_FK61240574157171" hashed="false" isPKey="false" name="MTD_ENTITIES_FK61240574157171_INDEX_C" unique="false">
+<indColumn ascending="true" name="MDENT_PARENT_ID" position="1"/>
+</index>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_C" unique="true">
+<indColumn ascending="true" name="MDENT_ID" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_C">
+<pkColumn pkField="MDENT_ID" pkName="PRIMARY_KEY_C" pkSchema="PUBLIC" pkTable="MTD_ENTITIES"/>
+</primaryKey>
+<foreignKeys>
+<foreignKey name="MTD_ENTITIES_FK61240574157171">
+<fkColumn fkDeferrable="false" fkDeleteRule="CASCADE" fkField="MDENT_PARENT_ID" fkName="MTD_ENTITIES_FK61240574157171" fkSchema="PUBLIC" fkTable="MTD_ENTITIES" fkUpdateRule="CASCADE" pkField="MDENT_ID" pkName="PRIMARY_KEY_C" pkSchema="PUBLIC" pkTable="MTD_ENTITIES"/>
+</foreignKey>
+</foreignKeys>
+</table>
+<table description="" name="ACCOUNTING">
+<columns>
+<column description="" isPk="true" javaType="java.math.BigDecimal" name="ACCOUNTING_ID" nullable="false" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="READERCODE" nullable="true" precision="10" scale="32767" signed="true" size="65535" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="BOOKNUMBER" nullable="true" precision="10" scale="32767" signed="true" size="65535" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.util.Date" name="ISSUED" nullable="true" precision="10" scale="0" signed="true" size="8" type="91" typeName="DATE"/>
+<column description="" isPk="false" javaType="java.util.Date" name="ESTIMATEDRETURN" nullable="true" precision="10" scale="0" signed="true" size="8" type="91" typeName="DATE"/>
+<column description="" isPk="false" javaType="java.util.Date" name="REALRETURN" nullable="true" precision="10" scale="0" signed="true" size="8" type="91" typeName="DATE"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_AD" unique="true">
+<indColumn ascending="true" name="ACCOUNTING_ID" position="1"/>
+</index>
+<index clustered="false" fKeyName="FK_138380093225845" hashed="false" isPKey="false" name="FK_138380093225845_INDEX_A" unique="false">
+<indColumn ascending="true" name="BOOKNUMBER" position="1"/>
+</index>
+<index clustered="false" fKeyName="FK_138380162464791" hashed="false" isPKey="false" name="FK_138380162464791_INDEX_E" unique="false">
+<indColumn ascending="true" name="READERCODE" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_AD">
+<pkColumn pkField="ACCOUNTING_ID" pkName="PRIMARY_KEY_AD" pkSchema="PUBLIC" pkTable="ACCOUNTING"/>
+</primaryKey>
+<foreignKeys>
+<foreignKey name="FK_138380093225845">
+<fkColumn fkDeferrable="false" fkDeleteRule="CASCADE" fkField="BOOKNUMBER" fkName="FK_138380093225845" fkSchema="PUBLIC" fkTable="ACCOUNTING" fkUpdateRule="CASCADE" pkField="ISBN" pkName="PRIMARY_KEY_7D" pkSchema="PUBLIC" pkTable="BOOK"/>
+</foreignKey>
+<foreignKey name="FK_138380162464791">
+<fkColumn fkDeferrable="false" fkDeleteRule="CASCADE" fkField="READERCODE" fkName="FK_138380162464791" fkSchema="PUBLIC" fkTable="ACCOUNTING" fkUpdateRule="CASCADE" pkField="READERCODE" pkName="PRIMARY_KEY_9" pkSchema="PUBLIC" pkTable="READER"/>
+</foreignKey>
+</foreignKeys>
+</table>
+<table description="" name="TYPEOFGENRE">
+<columns>
+<column description="" isPk="true" javaType="java.math.BigDecimal" name="TYPEOFGENRE_ID" nullable="false" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.lang.String" name="GENRE" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_363" unique="true">
+<indColumn ascending="true" name="TYPEOFGENRE_ID" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_363">
+<pkColumn pkField="TYPEOFGENRE_ID" pkName="PRIMARY_KEY_363" pkSchema="PUBLIC" pkTable="TYPEOFGENRE"/>
+</primaryKey>
+</table>
+<table description="" name="DUMMYTABLE">
+<columns>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="DUMMY" nullable="true" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+</columns>
+<indexes/>
+</table>
+<table description="" name="BOOK">
+<columns>
+<column description="" isPk="true" javaType="java.math.BigDecimal" name="ISBN" nullable="false" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="GENRE" nullable="true" precision="10" scale="0" signed="true" size="100" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="AUTHOR" nullable="true" precision="10" scale="0" signed="true" size="100" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.lang.String" name="BOOKNAME" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="PUBLISHINGHOUSE" nullable="true" precision="10" scale="0" signed="true" size="100" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="PRICE" nullable="true" precision="10" scale="32767" signed="true" size="65535" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.math.BigDecimal" name="TYPE" nullable="true" precision="10" scale="0" signed="true" size="100" type="3" typeName="DECIMAL"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="FK_138380139033587" hashed="false" isPKey="false" name="FK_138380139033587_INDEX_7" unique="false">
+<indColumn ascending="true" name="TYPE" position="1"/>
+</index>
+<index clustered="false" fKeyName="FK_138380141625404" hashed="false" isPKey="false" name="FK_138380141625404_INDEX_7" unique="false">
+<indColumn ascending="true" name="AUTHOR" position="1"/>
+</index>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_7D" unique="true">
+<indColumn ascending="true" name="ISBN" position="1"/>
+</index>
+<index clustered="false" fKeyName="FK_138380134611917" hashed="false" isPKey="false" name="FK_138380134611917_INDEX_7" unique="false">
+<indColumn ascending="true" name="GENRE" position="1"/>
+</index>
+<index clustered="false" fKeyName="FK_138380146356035" hashed="false" isPKey="false" name="FK_138380146356035_INDEX_1" unique="false">
+<indColumn ascending="true" name="PUBLISHINGHOUSE" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_7D">
+<pkColumn pkField="ISBN" pkName="PRIMARY_KEY_7D" pkSchema="PUBLIC" pkTable="BOOK"/>
+</primaryKey>
+<foreignKeys>
+<foreignKey name="FK_138380141625404">
+<fkColumn fkDeferrable="false" fkDeleteRule="CASCADE" fkField="AUTHOR" fkName="FK_138380141625404" fkSchema="PUBLIC" fkTable="BOOK" fkUpdateRule="CASCADE" pkField="AUTHOR_ID" pkName="PRIMARY_KEY_7" pkSchema="PUBLIC" pkTable="AUTHOR"/>
+</foreignKey>
+<foreignKey name="FK_138380139033587">
+<fkColumn fkDeferrable="false" fkDeleteRule="CASCADE" fkField="TYPE" fkName="FK_138380139033587" fkSchema="PUBLIC" fkTable="BOOK" fkUpdateRule="CASCADE" pkField="TYPEOFBOOK_ID" pkName="PRIMARY_KEY_5" pkSchema="PUBLIC" pkTable="TYPEOFBOOK"/>
+</foreignKey>
+<foreignKey name="FK_138380146356035">
+<fkColumn fkDeferrable="false" fkDeleteRule="CASCADE" fkField="PUBLISHINGHOUSE" fkName="FK_138380146356035" fkSchema="PUBLIC" fkTable="BOOK" fkUpdateRule="CASCADE" pkField="PUBLISHINGHOUSE_ID" pkName="PRIMARY_KEY_3" pkSchema="PUBLIC" pkTable="PUBLISHINGHOUSE"/>
+</foreignKey>
+<foreignKey name="FK_138380134611917">
+<fkColumn fkDeferrable="false" fkDeleteRule="CASCADE" fkField="GENRE" fkName="FK_138380134611917" fkSchema="PUBLIC" fkTable="BOOK" fkUpdateRule="CASCADE" pkField="TYPEOFGENRE_ID" pkName="PRIMARY_KEY_363" pkSchema="PUBLIC" pkTable="TYPEOFGENRE"/>
+</foreignKey>
+</foreignKeys>
+</table>
+<table description="TypeOfBook" name="TYPEOFBOOK">
+<columns>
+<column description="" isPk="true" javaType="java.math.BigDecimal" name="TYPEOFBOOK_ID" nullable="false" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+<column description="" isPk="false" javaType="java.lang.String" name="TYPE" nullable="true" precision="10" scale="0" signed="true" size="100" type="12" typeName="VARCHAR"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_5" unique="true">
+<indColumn ascending="true" name="TYPEOFBOOK_ID" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_5">
+<pkColumn pkField="TYPEOFBOOK_ID" pkName="PRIMARY_KEY_5" pkSchema="PUBLIC" pkTable="TYPEOFBOOK"/>
+</primaryKey>
+</table>
+<table description="" name="MTD_VERSION">
+<columns>
+<column description="" isPk="true" javaType="java.math.BigDecimal" name="VERSION_VALUE" nullable="false" precision="10" scale="0" signed="true" size="18" type="3" typeName="DECIMAL"/>
+</columns>
+<indexes>
+<index clustered="false" fKeyName="" hashed="false" isPKey="true" name="PRIMARY_KEY_1" unique="true">
+<indColumn ascending="true" name="VERSION_VALUE" position="1"/>
+</index>
+</indexes>
+<primaryKey name="PRIMARY_KEY_1">
+<pkColumn pkField="VERSION_VALUE" pkName="PRIMARY_KEY_1" pkSchema="PUBLIC" pkTable="MTD_VERSION"/>
+</primaryKey>
+</table>
+</tables>
+</schema>

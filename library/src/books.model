@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="TYPEOFGENRE" entityHeight="200" entityIconified="false" entityId="138390071554531" entityLocationX="365" entityLocationY="5" entityWidth="150" tableAlias="t" tableName="TYPEOFGENRE" tableSchemaName=""/>
+  <entity Title="BOOK" entityHeight="200" entityIconified="false" entityId="138389733841305" entityLocationX="180" entityLocationY="8" entityWidth="150" tableAlias="t1" tableName="BOOK" tableSchemaName=""/>
+  <relation leftEntityFieldName="GENRE" leftEntityId="138389733841305" rightEntityFieldName="TYPEOFGENRE_ID" rightEntityId="138390071554531"/>
+</datamodel>
