@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="300px" prefWidth="572px">
+  <widget name="modelGrid" parent="Form" prefHeight="144px" prefWidth="552px" type="DbGridDesignInfo">
+    <column name="№ читательского билета">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138686802959177" fieldName="LASTNAME"/>
+        <displayField entityId="138622244176177" fieldName="ACCOUNTING_ID"/>
+      </controlInfo>
+      <datamodelElement entityId="138622244176177" fieldName="ACCOUNTING_ID"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Читатель">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138686802959177" fieldName="READERCODE"/>
+        <displayField entityId="138686802959177" fieldName="LASTNAME"/>
+      </controlInfo>
+      <datamodelElement entityId="138622244176177" fieldName="READERCODE"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="№ книги">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138686801183549" fieldName="ISBN"/>
+        <displayField entityId="138686801183549" fieldName="ISBN"/>
+      </controlInfo>
+      <datamodelElement entityId="138622244176177" fieldName="BOOKNUMBER"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Выдача">
+      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622244176177" fieldName="ISSUED"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Предполагаемый возврата">
+      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622244176177" fieldName="ESTIMATEDRETURN"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Реальный возврат">
+      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622244176177" fieldName="REALRETURN"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138622244176177" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="144px" left="12px" top="84px" type="MarginConstraintsDesignInfo" width="552px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="29px" prefWidth="86px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="31px" height="29px" right="42px" type="MarginConstraintsDesignInfo" width="86px"/>
+  </widget>
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="29px" prefWidth="94px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="31px" height="29px" left="324px" type="MarginConstraintsDesignInfo" width="94px"/>
+  </widget>
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="29px" prefWidth="94px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="31px" height="29px" left="216px" type="MarginConstraintsDesignInfo" width="94px"/>
+  </widget>
+  <widget name="label" parent="Form" prefHeight="40px" prefWidth="288px" text="Аккаунты читателей" type="LabelDesignInfo">
+    <constraints height="40px" left="156px" top="24px" type="MarginConstraintsDesignInfo" width="288px"/>
+    <easFont name="Mshtakan" size="24" style="3"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

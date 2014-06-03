@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+  <entity Name="books" Title="books" entityHeight="200" entityIconified="false" entityId="138509780239827" entityLocationX="271" entityLocationY="36" entityWidth="150" queryId="books" tableName="" tableSchemaName=""/>
+  <entity Name="typeOfBook" Title="TypeOfBook" entityHeight="200" entityIconified="false" entityId="138509779233285" entityLocationX="723" entityLocationY="133" entityWidth="150" queryId="TypeOfBook" tableName="" tableSchemaName=""/>
+  <entity Name="accounting" Title="Accounting" entityHeight="200" entityIconified="false" entityId="138509776248594" entityLocationX="16" entityLocationY="-1" entityWidth="150" queryId="Accounting" tableName="" tableSchemaName=""/>
+  <entity Name="qReader" Title="qReader" entityHeight="200" entityIconified="false" entityId="138632896960967" entityLocationX="41" entityLocationY="233" entityWidth="150" queryId="qReader" tableName="" tableSchemaName=""/>
+  <entity Name="publishingHouse" Title="PublishingHouse" entityHeight="200" entityIconified="false" entityId="138509778322570" entityLocationX="208" entityLocationY="149" entityWidth="150" queryId="PublishingHouse" tableName="" tableSchemaName=""/>
+  <entity Name="genre" Title="Genre" entityHeight="200" entityIconified="false" entityId="138509777711174" entityLocationX="520" entityLocationY="28" entityWidth="150" queryId="Genre" tableName="" tableSchemaName=""/>
+  <entity Name="author" Title="Author" entityHeight="200" entityIconified="false" entityId="138509777134294" entityLocationX="412" entityLocationY="131" entityWidth="150" queryId="Author" tableName="" tableSchemaName=""/>
+  <referenceRelation leftEntityFieldName="READERCODE" leftEntityId="138509776248594" rightEntityFieldName="READERCODE" rightEntityId="138632896960967"/>
+  <referenceRelation leftEntityFieldName="BOOK" leftEntityId="138509777134294" rightEntityFieldName="ISBN" rightEntityId="138509780239827"/>
+  <referenceRelation leftEntityFieldName="PUBLISHINGHOUSE" leftEntityId="138509780239827" rightEntityFieldName="PUBLISHINGHOUSE_ID" rightEntityId="138509778322570"/>
+  <referenceRelation leftEntityFieldName="GENRE" leftEntityId="138509780239827" rightEntityFieldName="TYPEOFGENRE_ID" rightEntityId="138509777711174"/>
+  <referenceRelation leftEntityFieldName="BOOKNUMBER" leftEntityId="138509776248594" rightEntityFieldName="ISBN" rightEntityId="138509780239827"/>
+  <referenceRelation leftEntityFieldName="AUTHOR" leftEntityId="138509780239827" rightEntityFieldName="AUTHOR_ID" rightEntityId="138509777134294"/>
+  <referenceRelation leftEntityFieldName="TYPE" leftEntityId="138509780239827" rightEntityFieldName="TYPEOFBOOK_ID" rightEntityId="138509779233285"/>
+</datamodel>

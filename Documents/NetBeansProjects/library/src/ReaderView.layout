@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="310px" prefWidth="834px" title="save">
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="36px" prefWidth="94px" text="Удалить" type="ButtonDesignInfo">
+    <constraints height="36px" right="44px" top="108px" type="MarginConstraintsDesignInfo" width="94px"/>
+  </widget>
+  <widget actionPerformed="saveActionPerformed" name="save" parent="Form" prefHeight="36px" prefWidth="108px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints height="36px" right="30px" top="156px" type="MarginConstraintsDesignInfo" width="108px"/>
+  </widget>
+  <widget name="modelGrid1" parent="Form" prefHeight="192px" prefWidth="660px" type="DbGridDesignInfo">
+    <column name="Код читателя">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138632490262123" fieldName="READERCODE"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Фамилия">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138632490262123" fieldName="LASTNAME"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Имя">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138632490262123" fieldName="NAME"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Отчество">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138632490262123" fieldName="PATRONYMIC"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Дата рождения">
+      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138632490262123" fieldName="DATEOFBIRTH"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Место работы/учебы">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138632490262123" fieldName="STUDYORWORKPLACE"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Номер телефона">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138632490262123" fieldName="PHONENUMBER"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Адрес">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138632490262123" fieldName="ADDRESS"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138632490262123" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="192px" left="12px" top="48px" type="MarginConstraintsDesignInfo" width="660px"/>
+  </widget>
+  <widget name="label" parent="Form" prefHeight="28px" prefWidth="300px" text="  Сведения о читателях" type="LabelDesignInfo">
+    <constraints height="28px" left="204px" top="12px" type="MarginConstraintsDesignInfo" width="300px"/>
+    <easFont name="Mshtakan" size="24" style="3"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="36px" prefWidth="86px" text="Добавить" type="ButtonDesignInfo">
+    <constraints height="36px" right="52px" top="60px" type="MarginConstraintsDesignInfo" width="86px"/>
+  </widget>
+  <nonvisual name="modelGrid" prefHeight="0px" prefWidth="0px" type="DbGridDesignInfo">
+    <rowsColumnsDesignInfo>
+      <rowsDatasource/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+  </nonvisual>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

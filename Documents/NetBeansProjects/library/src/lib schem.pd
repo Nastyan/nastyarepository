@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel datamodelDbId="null">
+  <fieldsEntity entityHeight="71" entityIconified="false" entityId="138380122483199" entityLocationX="510" entityLocationY="365" entityWidth="184" tableName="TYPEOFGENRE"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="138365877496248" entityLocationX="30" entityLocationY="0" entityWidth="190" tableName="Reader"/>
+  <fieldsEntity entityHeight="163" entityIconified="false" entityId="138365906842227" entityLocationX="307" entityLocationY="169" entityWidth="150" tableName="Book"/>
+  <fieldsEntity entityHeight="76" entityIconified="false" entityId="138365970135503" entityLocationX="640" entityLocationY="284" entityWidth="178" tableName="TypeOfBook"/>
+  <fieldsEntity entityHeight="99" entityIconified="false" entityId="138365957312580" entityLocationX="578" entityLocationY="154" entityWidth="198" tableName="PublishingHouse"/>
+  <fieldsEntity entityHeight="131" entityIconified="false" entityId="138365928189906" entityLocationX="389" entityLocationY="14" entityWidth="150" tableName="Accounting"/>
+  <fieldsEntity entityHeight="120" entityIconified="false" entityId="138365945489843" entityLocationX="25" entityLocationY="217" entityWidth="150" tableName="Author"/>
+</datamodel>

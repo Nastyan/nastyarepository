@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="417px" prefWidth="614px">
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="36px" prefWidth="204px" text="Данные о книге" type="ButtonDesignInfo">
+    <constraints height="36px" left="180px" top="60px" type="MarginConstraintsDesignInfo" width="204px"/>
+  </widget>
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="36px" prefWidth="204px" text="Данные об авторе" type="ButtonDesignInfo">
+    <constraints height="36px" left="180px" top="108px" type="MarginConstraintsDesignInfo" width="204px"/>
+  </widget>
+  <widget actionPerformed="button3ActionPerformed" name="button3" parent="Form" prefHeight="36px" prefWidth="204px" text="Наименование жанра" type="ButtonDesignInfo">
+    <constraints height="36px" left="180px" top="156px" type="MarginConstraintsDesignInfo" width="204px"/>
+  </widget>
+  <widget actionPerformed="button4ActionPerformed" name="button4" parent="Form" prefHeight="36px" prefWidth="204px" text="Сведения об издательстве" type="ButtonDesignInfo">
+    <constraints height="36px" left="180px" top="204px" type="MarginConstraintsDesignInfo" width="204px"/>
+  </widget>
+  <widget actionPerformed="button5ActionPerformed" name="button5" parent="Form" prefHeight="36px" prefWidth="204px" text="Аккаунты читателей" type="ButtonDesignInfo">
+    <constraints height="36px" left="180px" top="252px" type="MarginConstraintsDesignInfo" width="204px"/>
+  </widget>
+  <widget actionPerformed="button6ActionPerformed" name="button6" parent="Form" prefHeight="36px" prefWidth="204px" text="Сведения о типе книг" type="ButtonDesignInfo">
+    <constraints bottom="81px" height="36px" left="180px" type="MarginConstraintsDesignInfo" width="204px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="36px" prefWidth="204px" text="Сведения о читателях" type="ButtonDesignInfo">
+    <constraints height="36px" left="180px" top="12px" type="MarginConstraintsDesignInfo" width="204px"/>
+  </widget>
+  <widget actionPerformed="button7ActionPerformed" name="button7" parent="Form" prefHeight="108px" prefWidth="156px" text="Поиск по читателям" type="ButtonDesignInfo">
+    <constraints height="108px" right="26px" top="36px" type="MarginConstraintsDesignInfo" width="156px"/>
+  </widget>
+  <widget actionPerformed="button8ActionPerformed" name="button8" parent="Form" prefHeight="108px" prefWidth="156px" text="Поиск по авторам" type="ButtonDesignInfo">
+    <constraints height="108px" right="26px" top="192px" type="MarginConstraintsDesignInfo" width="156px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

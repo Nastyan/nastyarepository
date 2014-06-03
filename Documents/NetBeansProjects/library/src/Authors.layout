@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="311px" prefWidth="718px">
+  <widget name="modelGrid" parent="Form" prefHeight="216px" prefWidth="564px" type="DbGridDesignInfo">
+    <column name="Код автора">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622268040610" fieldName="AUTHOR_ID"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Фамилия">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622268040610" fieldName="NAMEAUTHOR"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Имя">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622268040610" fieldName="LASTNAMEAUTHOR"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Отество ">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622268040610" fieldName="PATRONYMICAUTHOR"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Книга">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138686786830467" fieldName="ISBN"/>
+        <displayField entityId="138686786830467" fieldName="BOOKNAME"/>
+      </controlInfo>
+      <datamodelElement entityId="138622268040610" fieldName="BOOK"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138622268040610" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="216px" left="12px" top="60px" type="MarginConstraintsDesignInfo" width="564px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="36px" prefWidth="86px" text="Добавить" type="ButtonDesignInfo">
+    <constraints height="36px" right="34px" top="60px" type="MarginConstraintsDesignInfo" width="86px"/>
+  </widget>
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="36px" prefWidth="94px" text="Удалить" type="ButtonDesignInfo">
+    <constraints height="36px" right="26px" top="108px" type="MarginConstraintsDesignInfo" width="94px"/>
+  </widget>
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="36px" prefWidth="94px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints height="36px" right="26px" top="156px" type="MarginConstraintsDesignInfo" width="94px"/>
+  </widget>
+  <widget name="label" parent="Form" prefHeight="48px" prefWidth="264px" text="  Данные об авторе" type="LabelDesignInfo">
+    <constraints height="48px" left="228px" top="0px" type="MarginConstraintsDesignInfo" width="264px"/>
+    <easFont name="Mshtakan" size="24" style="3"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

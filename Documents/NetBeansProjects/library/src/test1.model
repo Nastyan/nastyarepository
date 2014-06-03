@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+  <entity Name="qAuth" Title="" entityHeight="200" entityIconified="false" entityId="139911251931013" entityLocationX="333" entityLocationY="133" entityWidth="150" queryId="qAuth" tableName="" tableSchemaName=""/>
+</datamodel>

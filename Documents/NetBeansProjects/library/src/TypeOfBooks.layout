@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="289px" prefWidth="707px">
+  <widget name="modelGrid" parent="Form" prefHeight="192px" prefWidth="552px" type="DbGridDesignInfo">
+    <column name="Код типа книги">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622394996268" fieldName="TYPEOFBOOK_ID"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Тип">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622394996268" fieldName="TYPE"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138622394996268" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="192px" left="24px" top="60px" type="MarginConstraintsDesignInfo" width="552px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="36px" prefWidth="86px" text="Добавить" type="ButtonDesignInfo">
+    <constraints height="36px" right="33px" top="60px" type="MarginConstraintsDesignInfo" width="86px"/>
+  </widget>
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="36px" prefWidth="94px" text="Удалить" type="ButtonDesignInfo">
+    <constraints height="36px" right="25px" top="108px" type="MarginConstraintsDesignInfo" width="94px"/>
+  </widget>
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="36px" prefWidth="94px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints height="36px" right="25px" top="156px" type="MarginConstraintsDesignInfo" width="94px"/>
+  </widget>
+  <widget name="label" parent="Form" prefHeight="24px" prefWidth="312px" text="Сведения о типе книг" type="LabelDesignInfo">
+    <constraints height="24px" left="252px" top="12px" type="MarginConstraintsDesignInfo" width="312px"/>
+    <easFont name="Mshtakan" size="24" style="3"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

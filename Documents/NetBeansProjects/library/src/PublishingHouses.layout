@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="292px" prefWidth="713px">
+  <widget name="modelGrid" parent="Form" prefHeight="180px" prefWidth="552px" type="DbGridDesignInfo">
+    <column name="Код издательства">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622332452679" fieldName="PUBLISHINGHOUSE_ID"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Дата публикации">
+      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.YYYY" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622332452679" fieldName="DATEOFPUBLISHING"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Число страниц">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622332452679" fieldName="NUMBEROFPAGES"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <column name="Адрес">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138622332452679" fieldName="ADDRESS"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Lucida Grande" size="13"/>
+      </headerStyle>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138622332452679" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="180px" left="12px" top="60px" type="MarginConstraintsDesignInfo" width="552px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="36px" prefWidth="86px" text="Добавить" type="ButtonDesignInfo">
+    <constraints height="36px" right="39px" top="72px" type="MarginConstraintsDesignInfo" width="86px"/>
+  </widget>
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="36px" prefWidth="94px" text="Удалить" type="ButtonDesignInfo">
+    <constraints height="36px" right="31px" top="120px" type="MarginConstraintsDesignInfo" width="94px"/>
+  </widget>
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="36px" prefWidth="94px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints height="36px" right="31px" top="168px" type="MarginConstraintsDesignInfo" width="94px"/>
+  </widget>
+  <widget name="label" parent="Form" prefHeight="36px" prefWidth="372px" text="Сведения об издательстве" type="LabelDesignInfo">
+    <constraints height="36px" left="180px" top="12px" type="MarginConstraintsDesignInfo" width="372px"/>
+    <easFont name="Mshtakan" size="24" style="3"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

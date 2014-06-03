@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+  <entity Name="genre" Title="Genre" entityHeight="200" entityIconified="false" entityId="138622507318376" entityLocationX="452" entityLocationY="66" entityWidth="150" queryId="Genre" tableName="" tableSchemaName=""/>
+  <entity Name="publishingHouse" Title="PublishingHouse" entityHeight="200" entityIconified="false" entityId="138686714974804" entityLocationX="20" entityLocationY="93" entityWidth="150" queryId="PublishingHouse" tableName="" tableSchemaName=""/>
+  <entity Name="books" Title="books" entityHeight="200" entityIconified="false" entityId="138598444737066" entityLocationX="199" entityLocationY="60" entityWidth="150" queryId="books" tableName="" tableSchemaName=""/>
+  <entity Name="author" Title="Author" entityHeight="200" entityIconified="false" entityId="138657415473636" entityLocationX="599" entityLocationY="222" entityWidth="150" queryId="Author" tableName="" tableSchemaName=""/>
+  <entity Name="typeOfBook" Title="TypeOfBook" entityHeight="200" entityIconified="false" entityId="138622555806950" entityLocationX="214" entityLocationY="278" entityWidth="150" queryId="TypeOfBook" tableName="" tableSchemaName=""/>
+  <referenceRelation leftEntityFieldName="PUBLISHINGHOUSE" leftEntityId="138598444737066" rightEntityFieldName="PUBLISHINGHOUSE_ID" rightEntityId="138686714974804"/>
+  <referenceRelation leftEntityFieldName="AUTHOR" leftEntityId="138598444737066" rightEntityFieldName="AUTHOR_ID" rightEntityId="138657415473636"/>
+  <referenceRelation leftEntityFieldName="TYPE" leftEntityId="138598444737066" rightEntityFieldName="TYPEOFBOOK_ID" rightEntityId="138622555806950"/>
+  <referenceRelation leftEntityFieldName="BOOK" leftEntityId="138657415473636" rightEntityFieldName="ISBN" rightEntityId="138598444737066"/>
+  <referenceRelation leftEntityFieldName="GENRE" leftEntityId="138598444737066" rightEntityFieldName="TYPEOFGENRE_ID" rightEntityId="138622507318376"/>
+</datamodel>
